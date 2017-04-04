@@ -1,0 +1,79 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`RepoPage RepoPage จะ render เฉพาะ Loading text เมื่อ isLoading เป็น false และข้อมูล่โหลดเสร็จ 1`] = `
+<View
+  style={
+    Object {
+      "flex": 2,
+      "justifyContent": "center",
+    }
+  }
+>
+  <View>
+    <TextInput
+      placeholder="search"
+      style={
+        Object {
+          "backgroundColor": "#ededed",
+          "height": 25,
+          "marginHorizontal": 10,
+          "marginTop": 70,
+        }
+      }
+    />
+    <Repolist
+      repos={
+        Array [
+          Object {
+            "description": "Useful description goes here.",
+            "id": 1,
+            "name": "Test 1",
+            "stargazers_count": 50000,
+          },
+          Object {
+            "description": "Useful description goes here.",
+            "id": 2,
+            "name": "Test 2",
+            "stargazers_count": 10000,
+          },
+          Object {
+            "description": "Useful description goes here.",
+            "id": 3,
+            "name": "Test 3",
+            "stargazers_count": 499,
+          },
+        ]
+      }
+      selectRepo={undefined}
+      selected={undefined}
+    />
+    <View
+      style={
+        Object {
+          "height": undefined,
+        }
+      }
+    />
+  </View>
+</View>
+`;
+
+exports[`RepoPage RepoPage จะ render เฉพาะ Loading text เมื่อ isLoading เป็น true และยังดึงข้อมูลไม่เสร็จ 1`] = `
+<View
+  style={
+    Object {
+      "flex": 2,
+      "justifyContent": "center",
+    }
+  }
+>
+  <Text
+    accessible={true}
+    allowFontScaling={true}
+    ellipsizeMode="tail"
+    style={undefined}
+  >
+    Loading...
+  </Text>
+</View>
+`;

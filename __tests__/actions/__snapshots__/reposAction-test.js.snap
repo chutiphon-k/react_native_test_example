@@ -1,0 +1,40 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`reposAction should handle reposAction for failure case 1`] = `
+Array [
+  Object {
+    "payload": Promise {
+      "_45": 0,
+      "_54": null,
+      "_65": [Error: ดูสิแม่ ผมชื่อเออเร่อ],
+      "_81": 2,
+    },
+    "type": "load_repos_request",
+  },
+]
+`;
+
+exports[`reposAction should handle reposAction for success case 1`] = `
+Array [
+  Object {
+    "payload": Promise {
+      "_45": 0,
+      "_54": null,
+      "_65": Object {
+        "json": [Function],
+      },
+      "_81": 1,
+    },
+    "type": "load_repos_request",
+  },
+]
+`;
+
+exports[`reposAction should handle selectRepo action 1`] = `
+Array [
+  Object {
+    "id": 1100,
+    "type": "select_repo",
+  },
+]
+`;
